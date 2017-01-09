@@ -1,3 +1,13 @@
 <h1>Possibilita</h1>
 
 <p>Olá!</p>
+
+<% if admin_signed_in? %>
+    <li>
+        <%= link_to('Sair', destroy_admin_session_path, :method => :delete) %>
+    </li>
+<% else %>
+    <li>
+        <%= link_to('Login', new_admin_session_path) %>
+    </li>
+<% end %>

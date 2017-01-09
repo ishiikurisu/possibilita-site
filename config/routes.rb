@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :admins
   resources :projects
   get 'main/index'
   root 'main#index'
