@@ -1,0 +1,24 @@
+doctype html
+html
+  head
+    title TesteSense
+    
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = csrf_meta_tags
+  body
+    header
+      nav.navbar.navbar-default
+        .container-fluid
+          .navbar-header
+            a.navbar-brand#senses href="/"  Senses
+            ul.nav.navbar-nav
+              li
+                a href="/projects"  Projetos
+          .navbar-form.navbar-right
+            = log_out_in_helper(current_admin)
+    = yield
+    p.notice= notice
+    p.alert= alert
+
+

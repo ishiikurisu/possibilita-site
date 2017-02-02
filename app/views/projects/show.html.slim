@@ -1,0 +1,11 @@
+p#notice = notice
+
+.jumbotron
+  p
+    strong Name:
+    = @project.name
+  p
+    strong Description:
+    = @project.description
+
+= link_to 'Back', projects_path
