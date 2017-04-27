@@ -17,7 +17,7 @@
       - @projects.each do |project|
         tr
           td = project.name
-          td = project.description
+          td = simple_format(project.description)
           td = link_to 'Detalhes', project
           - if current_admin  
             td = link_to 'Editar', edit_project_path(project)

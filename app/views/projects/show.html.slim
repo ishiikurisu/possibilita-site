@@ -6,6 +6,6 @@ p#notice = notice
     = @project.name
   p
     strong Description:
-    = @project.description
+    = simple_format(@project.description)
 
 = link_to 'Back', projects_path
