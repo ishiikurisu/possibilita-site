@@ -4,3 +4,16 @@
     p Projeto da Senses
     p
       a.btn.btn-success.btn-lg href="/projects" role="button" Ir para projetos
+
+.container
+	.row
+	  - @projects.each do |project|
+	  	.col-sm-6.col-md-4
+		    .thumbnail
+		      img alt="" src="..." /
+		      .caption
+		        h3 = project.name
+		        p Descrição
+		        p = project.description
+		        p
+		          a.btn.btn-primary href="#" role="button"  Ver
