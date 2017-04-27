@@ -17,11 +17,11 @@
 @import "bootstrap";
 
 body {
-  background-color: #f4f4f4;
+  background-color: #fff;
 }
 
 .navbar {
-  background-color: white;
+  background-color: #dfe5e6;
   a {
     color: #302f2f;
     vertical-align: center;
@@ -31,21 +31,30 @@ body {
 }
 
 #senses {
-  color: #41c643;
   font-size: 30px;
+}
+
+#possibi {
+    color: #A4DBE8;
+    font-family: 'Capriola', sans-serif;
+}
+
+#lita {
+    color: #D6938A;
+    font-family: 'Pacifico', cursive;
 }
 
 .jumbotron {
   margin: 30px;
   background-color: white;
-  color: #302f2f;
+  color: #D6938A;
 }
 
 .login-box {
   background-color: white;
   width: auto;
   border-radius: 10px;
-  border: 1px solid #41c643;
+  border: 1px solid #D6938A;
   padding: 10px;
   margin: 10px;
 }

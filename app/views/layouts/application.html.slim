@@ -1,8 +1,8 @@
 doctype html
 html
   head
-    title TesteSense
-    
+    title Possibilita
+    link href="https://fonts.googleapis.com/css?family=Capriola|Pacifico" rel="stylesheet"
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = csrf_meta_tags
@@ -11,7 +11,7 @@ html
       nav.navbar.navbar-default
         .container-fluid
           .navbar-header
-            a.navbar-brand#senses href="/"  Senses
+            a.navbar-brand#senses href="/" Possibilita
             ul.nav.navbar-nav
               li
                 a href="/projects"  Projetos
@@ -20,5 +20,3 @@ html
     = yield
     p.notice= notice
     p.alert= alert
-
-
