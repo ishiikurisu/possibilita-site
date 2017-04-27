@@ -4,8 +4,8 @@ default: &default
   timeout: 5000
   host: localhost
   username: user
-  # password: pass123
-  password: password
+  password: pass123
+  # password: password
   database: app-dev
 
 development:

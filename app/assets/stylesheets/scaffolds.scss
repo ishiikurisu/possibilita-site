@@ -1,14 +1,14 @@
 body {
   background-color: #fff;
-  color: #1E1E24;
-  font-family: 'Capriola', sans-serif;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
   margin: 33px;
 }
 
 p, ol, ul, td {
-  font-family: 'Capriola', sans-serif;
+  font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
   margin: 33px;
@@ -50,7 +50,7 @@ div {
 }
 
 #notice {
-  color: #D6938A;
+  color: green;
 }
 
 .field_with_errors {
@@ -61,7 +61,7 @@ div {
 
 #error_explanation {
   width: 450px;
-  border: 2px solid #CE2D4F;
+  border: 2px solid red;
   padding: 7px;
   padding-bottom: 0;
   margin-bottom: 20px;
