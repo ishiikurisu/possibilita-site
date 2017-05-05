@@ -17,11 +17,12 @@
 @import "bootstrap";
 
 body {
-  background-color: #fff;
+  background-color: #dfe5e6;
+  font-family: 'Capriola', sans-serif;
 }
 
 .navbar {
-  background-color: #dfe5e6;
+  background-color: #fff;
   a {
     color: #302f2f;
     vertical-align: center;
@@ -34,12 +35,12 @@ body {
   font-size: 30px;
 }
 
-#possibi {
+.possibi {
     color: #A4DBE8;
     font-family: 'Capriola', sans-serif;
 }
 
-#lita {
+.lita {
     color: #D6938A;
     font-family: 'Pacifico', cursive;
 }
@@ -48,6 +49,13 @@ body {
   margin: 30px;
   background-color: white;
   color: #D6938A;
+}
+
+.intro {
+    color: #1E1E24;
+    font-family: 'Capriola', sans-serif;
+    line-height: 30px;
+    font-size: 18px;
 }
 
 .login-box {
