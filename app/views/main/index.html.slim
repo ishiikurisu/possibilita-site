@@ -4,7 +4,11 @@
     p.intro 
       | Baseados nessa a ideia, o projeto Senses deu início ao Possibilita, uma plataforma de distribuição de projetos de dispositivos de tecnologia assistiva. Todos os projetos deste site foram concebidos com a missão de serem de baixo custo e de fácil acesso a todos aqueles que precisarem. 
 
+
 .container
+	= form_tag( { controller: "main", action: "index"}, id: "filter_form", method: :get) do
+ 		= select_tag :filtered, options_for_select(@tags.map { |t| [t.name, t.id] }), :include_blank => 'Todos', onchange: "$('#filter_form').submit();"
+
 	.row
 	  - @projects.each do |project|
 	  	.col-sm-6.col-md-4
