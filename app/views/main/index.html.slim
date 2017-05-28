@@ -6,17 +6,7 @@
 
 
 .container
-	= form_tag( { controller: "main", action: "index"}, id: "filter_form", method: :get) do
+	= form_tag( { controller: "main", action: "index"}, id: "filter_form", method: :get, remote: :true) do
  		= select_tag :filtered, options_for_select(@tags.map { |t| [t.name, t.id] }), :include_blank => 'Todos', onchange: "$('#filter_form').submit();"
 
-	.row
-	  - @projects.each do |project|
-	  	.col-sm-6.col-md-4
-		    .thumbnail
-		      img alt="" src="..." /
-		      .caption
-		        h3 = project.name
-		        p Descrição
-		        p = project.description
-		        p
-		          a.btn.btn-primary href="#" role="button"  Ver
+	== render 'projects'
