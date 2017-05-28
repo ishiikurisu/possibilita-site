@@ -1,5 +1,5 @@
 equalHeight = (group) ->
-  tallest = 0
+  tallest = 300
   group.each ->
     thisHeight = $(this).height()
     if thisHeight > tallest
@@ -10,6 +10,10 @@ equalHeight = (group) ->
     return
   return
 
-$(document).on 'turbolinks:load', ->
+$(document).ready ->
+  equalHeight $('.thumbnail')
+  return
+
+$(document).ajaxComplete ->
   equalHeight $('.thumbnail')
   return
