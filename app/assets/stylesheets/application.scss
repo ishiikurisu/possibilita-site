@@ -70,3 +70,18 @@ body {
 .table {
   background-color: white;
 }
+
+.messages {
+  text-align: center;
+  margin: 0 10px 0 10px;
+}
+
+#flash_alert {
+  color: #D6938A;
+}
+
+.alert-success{
+  background-color: #A4DBE8;
+  border-color: #87cddd !important;
+  color: #000;
+}

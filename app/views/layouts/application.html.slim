@@ -17,6 +17,5 @@ html
                 a href="/projects"  Projetos
           .navbar-form.navbar-right
             = log_out_in_helper(current_admin)
+    = render 'layouts/messages' 
     = yield
-    p.notice= notice
-    p.alert= alert
