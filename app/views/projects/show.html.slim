@@ -2,10 +2,10 @@ p#notice = notice
 
 .jumbotron
   p
-    strong Name:
+    strong Nome: 
     = @project.name
   p
-    strong Description:
+    strong Descrição: 
     = simple_format(@project.description)
 
-= link_to 'Back', projects_path
+= link_to 'Voltar', projects_path
