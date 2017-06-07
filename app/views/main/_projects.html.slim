@@ -6,6 +6,6 @@
 	      .caption
 	        h3 = project.name
 	        p Descrição
-	        p = project.description
+	        p = project.description.length > 50? "#{project.description[0, 50]}..." :  project.description
 	        p
 	          = link_to 'Detalhes', project, class: "btn btn-default btn-lg btn-block"
