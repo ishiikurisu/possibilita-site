@@ -6,6 +6,6 @@ p#notice = notice
     = @project.name
   p
     strong Descrição: 
-    = simple_format(@project.description)
+    = markdown(@project.description)
 
 = link_to 'Voltar', projects_path
