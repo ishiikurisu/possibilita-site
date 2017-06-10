@@ -1,5 +1,5 @@
 equalHeight = (group) ->
-  tallest = 300
+  tallest = 100
   group.each ->
     thisHeight = $(this).height()
     if thisHeight > tallest

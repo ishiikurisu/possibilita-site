@@ -2,6 +2,6 @@ p#notice = notice
 
 .jumbotron
   h1 = @project.name
-  p = simple_format(@project.description)
+  p = markdown(@project.description)
 
 = link_to 'Voltar', projects_path
