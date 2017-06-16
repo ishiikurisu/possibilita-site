@@ -8,10 +8,10 @@
   .form-horizontal
     .form-group.row
       = f.label :nome
-      = f.text_field :name, class: "form-control"
+      = f.text_field :name, class: "form-control", required: true
     .form-group.row
       = f.label :descrição
-      = f.text_area :description, class: "form-control"
+      = f.text_area :description, class: "form-control", required: true
     .form-group.row
       = f.collection_check_boxes :tag_ids, Tag.all, :id, :name
     .actions.form-group.row
