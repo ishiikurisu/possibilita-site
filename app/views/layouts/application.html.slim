@@ -15,7 +15,9 @@ html
             ul.nav.navbar-nav
               li
                 a href="/projects"  Projetos
+              li
+                a href="/main/about"  Sobre
           .navbar-form.navbar-right
             = log_out_in_helper(current_admin)
-    = render 'layouts/messages' 
+    
     = yield

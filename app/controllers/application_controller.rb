@@ -1,9 +1,8 @@
 class ApplicationController < ActionController::Base
   before_action :dont_allow_user_self_registration
-  protect_from_forgery with: :exception
+  # protect_from_forgery with: :exception
 
   private
-
   def after_sign_out_path_for(resource)
     root_path
   end
