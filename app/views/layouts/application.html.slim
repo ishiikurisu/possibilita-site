@@ -2,7 +2,7 @@ doctype html
 html
   head
     title Possibilita
-    link href="https://fonts.googleapis.com/css?family=Capriola|Pacifico" rel="stylesheet"
+    link href="https://fonts.googleapis.com/css?family=Roboto|Montserrat" rel="stylesheet"
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = csrf_meta_tags
@@ -21,3 +21,5 @@ html
             = log_out_in_helper(current_admin)
     
     = yield
+    footer
+      p Possibilita 2017
