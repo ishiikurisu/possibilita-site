@@ -8,8 +8,8 @@ end
 gem 'redcarpet'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.1'
-# Use Puma as the app server
-gem 'puma', '~> 3.0'
+# Use Rainbows as the app server
+gem 'rainbows-rails', '~> 1.0', '>= 1.0.1'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -34,13 +34,6 @@ gem 'jbuilder', '~> 2.5'
 gem 'postgresql'
 # Use for create nested forms
 gem 'nested_form_fields'
-# Use Redis adapter to run Action Cable in production
-# gem 'redis', '~> 3.0'
-# Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
-
-# Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
