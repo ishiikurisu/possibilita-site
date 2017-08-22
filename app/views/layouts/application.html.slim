@@ -9,17 +9,6 @@ html
     = csrf_meta_tags
   body
     header
-      nav.navbar.navbar-default
-        .container-fluid
-          .navbar-header
-            a.navbar-brand#senses href="/" <span class="possibi">Possibi</span><span class="lita">lita</span>
-            ul.nav.navbar-nav
-              li
-                a href="/projects"  Projetos
-              li
-                a href="/main/about"  Sobre
-          .navbar-form.navbar-right
-            = log_out_in_helper(current_admin)
-    
+      == render 'layouts/navbar'
     = yield
     == render 'layouts/pagefooter'

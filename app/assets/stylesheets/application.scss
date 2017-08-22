@@ -16,57 +16,17 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "pagefooter";
+@import "navbar";
 
 body {
   background-color: #FFFFFF;
   font-family: 'Roboto', sans-serif;
 }
 
-.navbar {
-  background-color: #fff;
-  font-family: 'Montserrat', sans-serif;
-  a {
-    color: #302f2f;
-    vertical-align: center;
-  }
-  height: 70px;
-  padding-top: 9px;
-}
-
-#senses {
-  font-size: 30px;
-}
-
-.possibi {
-    color: #A4DBE8;
-    font-family: 'Capriola', sans-serif;
-}
-
-.lita {
-    color: #D6938A;
-    font-family: 'Pacifico', cursive;
-}
-
 .jumbotron {
   margin: 30px;
   background-color: white;
   color: #D6938A;
-}
-
-.intro {
-    color: #1E1E24;
-    font-family: 'Capriola', sans-serif;
-    line-height: 30px;
-    font-size: 18px;
-}
-
-.login-box {
-  background-color: white;
-  width: auto;
-  border-radius: 10px;
-  border: 1px solid #D6938A;
-  padding: 10px;
-  margin: 10px;
 }
 
 .table {
@@ -82,7 +42,7 @@ body {
   color: #D6938A;
 }
 
-.alert-success{
+.alert-success {
   background-color: #A4DBE8;
   border-color: #87cddd !important;
   color: #000;

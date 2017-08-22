@@ -1,0 +1,12 @@
+nav.navbar.navbar-default
+  .container-fluid
+    .navbar-header
+      a.navbar-brand href="/"
+        = image_tag 'possibilita-logo.png', class: 'possibilita'
+    .navbar-form.navbar-right#nav-items
+      ul.nav.navbar-nav.navbar-right
+        li
+          a href="/projects"  Projetos
+        li
+          a href="/main/about"  Sobre
+/   = log_out_in_helper(current_admin)
