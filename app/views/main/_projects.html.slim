@@ -1,5 +1,5 @@
 .row#projects_index
-  - @projects.each do |project|
+  - @projects.take(3).each do |project|
   	.col-sm-6.col-md-4
 	    .thumbnail
 	      img alt="" src="..." /

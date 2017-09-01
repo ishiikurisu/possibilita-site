@@ -9,7 +9,6 @@ html
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = csrf_meta_tags
   body
-    header
-      == render 'layouts/navbar'
+    == render 'layouts/navbar'
     = yield
     == render 'layouts/pagefooter'
