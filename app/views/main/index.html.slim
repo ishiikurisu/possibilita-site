@@ -1,14 +1,10 @@
-.jumbotron
-    section.text-center.banner#main-banner
-        .sobre
-            .sobre-texto.col-md-6.col-md-offset-3
-                h1.title O conhecimento deve estar disponível para todos. A acessibilidade também.
-                p Baseados nessa a ideia, o projeto Senses deu início ao Possibilita, uma plataforma de distribuição de projetos de dispositivos de tecnologia assistiva. Todos os projetos deste site foram concebidos com a missão de serem de baixo custo e de fácil acesso a todos aqueles que precisarem.
+section.text-center.banner#main-banner
+    .sobre
+        .sobre-texto.col-md-6.col-md-offset-3
+            h1.title O conhecimento deve estar disponível para todos. A acessibilidade também.
+            p Baseados nessa a ideia, o projeto Senses deu início ao Possibilita, uma plataforma de distribuição de projetos de dispositivos de tecnologia assistiva. Todos os projetos deste site foram concebidos com a missão de serem de baixo custo e de fácil acesso a todos aqueles que precisarem.
 
-= render 'layouts/messages'
-
-.container
-	= form_tag( { controller: "main", action: "index"}, id: "filter_form", method: :get, remote: :true) do
- 		= select_tag :filtered, options_for_select(@tags.map { |t| [t.name, t.id] }), :include_blank => 'Todos', onchange: "$('#filter_form').submit();"
-
-	== render 'projects'
+section#projetos
+    .projetos-margin
+        h3.title projetos
+        hr
