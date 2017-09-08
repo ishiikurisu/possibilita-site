@@ -1,11 +1,9 @@
 .row#projects_index
   - @projects.take(3).each do |project|
-  	.col-sm-6.col-md-4
+  	.col-sm-6.col-md-4.each_project
 	    .thumbnail
 	      img alt="" src="..." /
 	      .caption
-	        h3 = project.name
-	        p Descrição
+	        h3 = link_to project.name, project, class: "project_title"
+            hr
 	        p = text_length(project.description, 50)
-	        p
-	          = link_to 'Detalhes', project, class: "btn btn-default btn-lg btn-block"

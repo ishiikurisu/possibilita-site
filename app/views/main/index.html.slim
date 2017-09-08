@@ -26,3 +26,6 @@ section#projetos
               img alt=("imagem de projeto") src="http://placehold.it/317x209" /
             .text
               p PROJETO 3
+        == render "projects"
+    .col-sm-offset-6.col-md-offset-4.col-sm-6.col-md-4
+        = link_to 'Ver mais', "/projects", class: "btn btn-default btn-lg btn-block"
