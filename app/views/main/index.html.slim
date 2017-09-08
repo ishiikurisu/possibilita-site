@@ -8,3 +8,6 @@ section#projetos
     .projetos-margin
         h3.title projetos
         hr
+        == render "projects"
+    .col-sm-offset-6.col-md-offset-4.col-sm-6.col-md-4
+        = link_to 'Ver mais', "/projects", class: "btn btn-default btn-lg btn-block"
