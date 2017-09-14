@@ -5,27 +5,9 @@ section.text-center.banner#main-banner
             p Baseados nessa a ideia, o projeto Senses deu início ao Possibilita, uma plataforma de distribuição de projetos de dispositivos de tecnologia assistiva. Todos os projetos deste site foram concebidos com a missão de serem de baixo custo e de fácil acesso a todos aqueles que precisarem.
 
 section#projetos
-    .projetos-margin
+    .container.projetos-margin
         h3.title projetos
         hr
-        ul.grid
-          li
-            a href="#" 
-              img alt=("imagem de projeto") src="http://placehold.it/317x209" /
-            .text
-              p PROJETO 1
-              p.description Descrição do projeto
-          li
-            a href="#" 
-              img alt=("imagem de projeto") src="http://placehold.it/317x209" /
-            .text
-              p PROJETO 2
-            p.description Descrição do projeto
-          li style=("margin: 0;") 
-            a href="#" 
-              img alt=("imagem de projeto") src="http://placehold.it/317x209" /
-            .text
-              p PROJETO 3
         == render "projects"
     .col-sm-offset-6.col-md-offset-4.col-sm-6.col-md-4
         = link_to 'Ver mais', "/projects", class: "btn btn-default btn-lg btn-block"
