@@ -1,25 +1,22 @@
-.col-md-2
-
-.container.col-md-8
-  h1 Listando projetos
-
-  table.table.table-bordered
-    thead
-      tr
-        th Nome
-        th Descrição
-        th
-        - if current_admin
-          th
-          th
-
-    tbody
-      - @projects.each do |project|
-        tr
-          td = project.name
-          td = simple_format(project.description)
-          td = link_to 'Detalhes', project
-          - if current_admin  
-            td = link_to 'Editar', edit_project_path(project)
-            td = link_to 'Destruir', project, data: { confirm: 'Are you sure?' }, method: :delete
-  = link_to_filter(current_admin)
+.container
+  .row
+    .col-md-12
+      p
+        a href="/"
+          i.fa.fa-home aria-hidden="true"
+        | /
+        = link_to 'projetos', '/projects'
+    .col-md-8
+      h1 Projetos
+    .col-md-4
+      p Pesquisar
+  - @projects.each do |project|
+    .container.sobre-bloco
+      br
+      .col-md-1.triangle = image_tag "yellow-triangle.svg"
+      .col-md-11.titulo-bloco = project.name
+      p.col-md-11.col-md-offset-1 = text_length(project.description, 50)
+      = link_to 'Vamos fazer?', project, class: "btn btn-primary pull-right"
+      - if current_admin
+        = link_to 'Editar', edit_project_path(project), class: "btn btn-primary pull-right"
+        = link_to 'Destruir', project, data: { confirm: 'Are you sure?' }, method: :delete, class: "btn btn-primary pull-right"
