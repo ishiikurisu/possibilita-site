@@ -8,14 +8,20 @@
         = link_to 'projetos', '/projects'
     .col-md-8
       h1 Projetos
-    .col-md-4
-      p Pesquisar
+    .container.col-md-4
+      form
+        .form-group.row
+          .col-md-10
+            input.form-control type="text" id="projectsearch" placeholder="Pesquisar"
+          .col-md-2
+            button.btn.btn-secondary type="submit"
+              i.fa.fa-search aria-hidden="true"
   - @projects.each do |project|
     .container.sobre-bloco
       br
       .col-md-1.triangle = image_tag "yellow-triangle.svg"
       .col-md-11.titulo-bloco = project.name
-      p.col-md-11.col-md-offset-1 = text_length(project.description, 50)
+      p.col-md-11.col-md-offset-1 = text_length(project.description, 200)
       = link_to 'Vamos fazer?', project, class: "btn btn-primary pull-right"
       - if current_admin
         = link_to 'Editar', edit_project_path(project), class: "btn btn-primary pull-right"
