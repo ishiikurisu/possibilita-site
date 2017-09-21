@@ -1,12 +1,12 @@
 .container
   .row
-    .col-md-12
-      / TODO Change this to a breadcrumb from bootstrap
-      p
-        a href="/"
-          i.fa.fa-home aria-hidden="true"
-        | /
-        = link_to 'projetos', '/projects'
+    .col-md-12.bread
+      ol.breadcrumb
+        li.breadcrumb-item
+          a href="/"
+            i.fa.fa-home aria-hidden="true"
+        li.breadcrumb-item.active
+          = link_to 'projetos', '/projects'
     .col-md-8
       h1 Projetos
     .container.col-md-4
