@@ -1,10 +1,7 @@
 .row#projects_index
   - @projects.take(3).each do |project|
   	.col-sm-6.col-md-4.each_project
-	  .thumbnail
-        img alt=("imagem de projeto") src="http://placehold.it/317x209"
-        / TODO Discover why there is a gap here
-	    .caption
-	      h3 = link_to project.name, project, class: "project_title"
-          hr
-	      p = text_length(project.description, 50)
+      = image_tag "http://placehold.it/317x209", alt: "image de projeto"
+      h4 = link_to project.name, project, class: "project_title"
+      hr
+      p = text_length(project.description, 50)
