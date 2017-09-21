@@ -19,7 +19,6 @@
               i.fa.fa-search aria-hidden="true"
   - @projects.each do |project|
     .container.sobre-bloco
-      br
       .col-md-1.triangle = image_tag "yellow-triangle.svg"
       .col-md-11.titulo-bloco = project.name
       p.col-md-11.col-md-offset-1 = text_length(project.description, 200)

@@ -25,3 +25,119 @@
 .each_project {
 	border: none;
 }
+
+.banner {
+    height: 440px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 0;
+    color: #FFF;
+}
+
+.table {
+  background-color: white;
+}
+
+.messages {
+  text-align: center;
+  margin: 0 10px 0 10px;
+}
+
+#flash_alert {
+  color: #D6938A;
+}
+
+.alert-success {
+  background-color: #A4DBE8;
+  border-color: #87cddd !important;
+  color: #000;
+}
+
+.sobre {
+  background-color: rgba(255, 252, 0, 0.6);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.sobre-texto {
+  padding-top: 141px;
+  font-size: 1.4em;
+}
+
+#main-banner {
+    background-image: image-url('main_back.jpg');
+}
+
+h1.title {
+    font-size: 1.8em;
+    line-height: 44px;
+}
+
+#projetos {
+  height: 675px;
+  width: 100%;
+}
+.projetos-margin {
+  width: 990px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.projetos-margin h3 {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 69px;
+  margin-bottom: 21px;
+}
+
+.projetos-margin h4 {
+  text-align: center;
+  font-size: 24px;
+}
+
+.btn-block {
+    margin-top: 30px;
+}
+
+.projetos-margin hr {
+  border: 3px solid #000000;
+  width: 60px;
+  height: 0px;
+}
+
+.grid {
+  margin-top: 70px;
+  width: 100%;
+  position: relative;
+  margin-bottom: 70px;
+  overflow: hidden;
+}
+
+ul {
+  list-style: none;
+}
+
+.grid li {
+  margin: 0 14px 14px 0;
+  float: left;
+  width: 317px;
+  overflow: hidden;
+  position: relative;
+}
+
+.grid .text {
+  position: absolute;
+  width: 317px;
+  height: 100%;
+  z-index: 2;
+  opacity: 0;
+  color: #fff;
+}
+
+.grid .text p {
+  background-color: #fff;
+}
