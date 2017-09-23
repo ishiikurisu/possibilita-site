@@ -1,7 +1,28 @@
-p#notice = notice
-
-.jumbotron
-  h1 = @project.name
-  p = markdown(@project.description)
-
-= link_to 'Voltar', projects_path
+.container
+  .row
+    .col-md-12.bread
+      ol.breadcrumb
+        li.breadcrumb-item
+          a href="/"
+            i.fa.fa-home aria-hidden="true"
+        li.breadcrumb-item
+          = link_to 'projetos', '/projects'
+        li.breadcrumb-item.active
+          = @project.name
+    .col-md-8
+      h1.back-button
+        a href=projects_path Voltar
+    .container.col-md-4
+      form
+        .form-group.row
+          .col-md-10
+            input.form-control type="text" id="projectsearch" placeholder="Pesquisar"
+          .col-md-2
+            button.btn.btn-secondary type="submit"
+              i.fa.fa-search aria-hidden="true"
+  .container.sobre-bloco
+    .col-md-1.triangle = image_tag "yellow-triangle.svg"
+    .col-md-11.titulo-bloco = @project.name
+    .col-md-11.col-md-offset-1
+      .project-description
+        = markdown @project.description
