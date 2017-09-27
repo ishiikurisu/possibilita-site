@@ -5,7 +5,11 @@ class ProjectsController < ApplicationController
   # GET /projects
   # GET /projects.json
   def index
-    @projects = Project.all
+    @projects = Project.all.to_a
+    unless request['query'].nil?
+        query = request['query'].upcase
+        @projects.select! { |p| (p.description.upcase.include? query) || (p.name.upcase.include? query) }
+    end
   end
 
   # GET /projects/1

@@ -13,17 +13,24 @@
       form
         .form-group.row
           .col-md-10
-            input.form-control type="text" id="projectsearch" placeholder="Pesquisar"
+            input.form-control type="text" name="query" placeholder="Pesquisar"
           .col-md-2
             button.btn.btn-secondary type="submit"
               i.fa.fa-search aria-hidden="true"
-  - @projects.each do |project|
-    .container.sobre-bloco
-      .col-md-1.triangle = image_tag "yellow-triangle.svg"
-      .col-md-11.titulo-bloco = link_to project.name, project
-      .col-md-11.col-md-offset-1
-        p = markdown(text_length(project.description, 200))
-      = link_to 'Vamos fazer?', project, class: "btn btn-primary pull-right"
-      - if current_admin
-        = link_to 'Editar', edit_project_path(project), class: "btn btn-primary pull-right"
-        = link_to 'Destruir', project, data: { confirm: 'Tem certeza?' }, method: :delete, class: "btn btn-danger pull-right"
+- if @projects.length > 0
+    - @projects.each do |project|
+      .container.sobre-bloco
+        .col-md-1.triangle = image_tag "yellow-triangle.svg"
+        .col-md-11.titulo-bloco = link_to project.name, project
+        .col-md-11.col-md-offset-1
+          p = markdown(text_length(project.description, 200))
+        = link_to 'Vamos fazer?', project, class: "btn btn-primary pull-right"
+        - if current_admin
+          = link_to 'Editar', edit_project_path(project), class: "btn btn-primary pull-right"
+          = link_to 'Destruir', project, data: { confirm: 'Tem certeza?' }, method: :delete, class: "btn btn-danger pull-right"
+- else
+  .container.sobre-bloco
+    .col-md-1.triangle = image_tag "yellow-triangle.svg"
+    .col-md-11.titulo-bloco Nada encontrado!
+    .col-md-11.col-md-offset-1
+      p Talvez seja hora de procurar outro projeto?
