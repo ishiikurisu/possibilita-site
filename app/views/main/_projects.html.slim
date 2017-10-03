@@ -1,7 +1,8 @@
 .row#projects_index
   - @projects.take(3).each do |project|
   	.col-sm-6.col-md-4.each_project
-      = image_tag "http://placehold.it/317x209", alt: "image de projeto"
+      - if !get_descriptive_image(project).nil?
+        = image_tag get_descriptive_image(project), alt: "imagem de projeto", class: "project-image"
       h4 = link_to project.name, project, class: "project_title"
       hr
       p = text_length(project.description, 50)

@@ -4,3 +4,8 @@
 require_relative 'config/application'
 
 Rails.application.load_tasks
+
+desc "Tests the main helper functions"
+task :tdd do
+    puts `ruby ./test/helpers/test_main_helper.rb`
+end
