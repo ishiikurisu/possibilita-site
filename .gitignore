@@ -24,3 +24,9 @@
 /log/development.log
 
 *Thumbs.db
+
+#
+# VAGRANT STUFF
+#
+
+.vagrant/
